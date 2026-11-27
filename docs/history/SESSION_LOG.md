@@ -975,8 +975,10 @@ build slice.
 
 Follow-up world-model boundary alignment (2026-11-27 UTC): documented in
 `README.md`, `docs/LSC-003_Synthetic_Data_Generation_Strategy.md`,
-`docs/LSC-REF-001_Technology_Roles_and_Reuse_Assessment.md`, and `HANDOFF.md`
-that `aadehamid/pearland-petroleum-corporation` (`ebc226f`) owns the canonical
-Refinery A v1 enterprise world model and two-part `WorldExportBundle`
-(`observable/` vs `hidden_truth/` under `evaluation/hidden/`), while LSC and
-`lagos-chem-l0/` stay this repository's independent standalone home-lab dataset.
+`docs/LSC-REF-001_Technology_Roles_and_Reuse_Assessment.md`,
+`docs/LSC-REG-002_Source_and_Integration_Register.md`, and `HANDOFF.md`
+that `aadehamid/pearland-petroleum-corporation` (reconciled at `f3086f78`,
+renamed sister links in PR #12 at `ebc226f`) owns the canonical Refinery A v1
+enterprise world model and two-part `WorldExportBundle` (`observable/` vs
+`hidden_truth/` under `evaluation/hidden/`), while LSC and `lagos-chem-l0/` stay
+this repository's independent standalone home-lab dataset.
