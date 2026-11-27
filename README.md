@@ -39,6 +39,24 @@ The related private project `aadehamid/engineering-drawing-intelligence`
 (formerly `aadehamid/Engineering_Drawing_to_Graph`) adds an authoring-system
 backend route; it is a separate project, not a dependency.
 
+## Relationship to Pearland Petroleum Corporation (PPC)
+
+Lagos Specialty Chemicals (LSC) and its R2 bucket (`lagos-chem-l0/`) remain this
+repository's standalone home-lab scenario through Phase 7. Across the broader
+five-repository downstream ecosystem (`enterprise-performance-model`,
+`enterprise-context-engineering`, `industrial-context-engineering`,
+`engineering-drawing-intelligence`, and `pearland-petroleum-corporation`),
+`aadehamid/pearland-petroleum-corporation` owns the single canonical enterprise
+world model (Refinery A v1, `ADR-0040`, `ADR-0041`, and `ADR-0053`, reconciled
+at `ebc226f`). PPC integrates this repository's L0 contracts through a
+commit-pinned provisional adapter (`ADR-0042`), isolates hidden world truth
+under `evaluation/hidden/`, and plans to publish Refinery A's coherent
+`observable/` OT L0 streams and native tag schedule via `WorldExportBundle` in
+`WP-8B` (`ADR-0053`). From PPC's perspective, pre-world-model R2 prefixes
+(`lagos-chem-l0/`) are classified as `LEGACY_PRE_WORLD_MODEL` and are never
+moved or deleted by PPC. See
+[LSC-REF-001](docs/LSC-REF-001_Technology_Roles_and_Reuse_Assessment.md#2026-11-26-ppc-baseline-update).
+
 ## Repository layout
 
 | Path | Responsibility |

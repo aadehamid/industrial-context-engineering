@@ -27,7 +27,7 @@ rows below.
 - Slice 1 event transport uses NATS JetStream with a transactional outbox on IT and OPC UA plus MQTT Sparkplug B on OT (`ADR-0046`), deferring Kafka and Debezium.
 - Formal semantics moved from a standing Apache Jena/Fuseki server to Git Turtle validated by `pyshacl` and projected to Neo4j Community (`ADR-0044`), matching this repository's Plane 3 split from PR #57.
 - Workflow state moved to PostgreSQL with no Cloudflare D1 (`ADR-0055`).
-- PPC integrates this repository through a commit-pinned provisional adapter (`ADR-0042`) and plans to export a coherent Refinery A dataset via `WorldExportBundle` in `WP-8B` (`ADR-0053`). Existing R2 prefixes (`lagos-chem-l0/`) remain untouched and are classified by PPC as `LEGACY_PRE_WORLD_MODEL`.
+- PPC integrates this repository through a commit-pinned provisional adapter (`ADR-0042`), owns the single canonical Refinery A v1 enterprise world model across the five-repository ecosystem (`enterprise-performance-model`, `enterprise-context-engineering`, `industrial-context-engineering`, `engineering-drawing-intelligence`, and `pearland-petroleum-corporation`), and plans to export a coherent Refinery A dataset via `WorldExportBundle` in `WP-8B` (`ADR-0053`, partitioned into `observable/` for sister repositories and `hidden_truth/` under `evaluation/hidden/` for grading only). Existing R2 prefixes (`lagos-chem-l0/`) remain untouched as this lab's standalone LSC dataset and are classified by PPC as `LEGACY_PRE_WORLD_MODEL`.
 
 This update records PPC's current design for alignment only. It does not amend
 this repository's approved charter choices or adopt new dependencies.
