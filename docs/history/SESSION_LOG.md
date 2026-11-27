@@ -965,7 +965,7 @@ detached `scada_skeleton` worktree was removed.
 
 Documentation was updated to reflect the new repository names and PPC's
 reconciled architecture baseline (`f3086f7862c2cfd75c29ed0c48ed5ead4f513d1f`,
-`ADR-0040` through `ADR-0056`: Delta Lake on R2, Redpanda with transactional
+`ADR-0040` through `ADR-0056`: Delta Lake on R2, NATS JetStream with transactional
 outbox on IT, OPC UA and MQTT Sparkplug B on OT, Git Turtle with `pyshacl` and
 Neo4j Community, no Cloudflare D1, provisional adapter integration, and planned
 `WorldExportBundle` in `WP-8B`). The Python package (`src/scada_harmonizer/`),

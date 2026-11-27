@@ -24,7 +24,7 @@ and `ADR-0040` through `ADR-0056`). Five changes supersede the earlier `01027a84
 rows below.
 
 - Analytical storage moved from DuckLake to Delta Lake on Cloudflare R2 (`ADR-0045`).
-- Slice 1 event transport uses Redpanda with a transactional outbox on IT and OPC UA plus MQTT Sparkplug B on OT (`ADR-0046`), deferring Kafka and Debezium.
+- Slice 1 event transport uses NATS JetStream with a transactional outbox on IT and OPC UA plus MQTT Sparkplug B on OT (`ADR-0046`), deferring Kafka and Debezium.
 - Formal semantics moved from a standing Apache Jena/Fuseki server to Git Turtle validated by `pyshacl` and projected to Neo4j Community (`ADR-0044`), matching this repository's Plane 3 split from PR #57.
 - Workflow state moved to PostgreSQL with no Cloudflare D1 (`ADR-0055`).
 - PPC integrates this repository through a commit-pinned provisional adapter (`ADR-0042`) and plans to export a coherent Refinery A dataset via `WorldExportBundle` in `WP-8B` (`ADR-0053`). Existing R2 prefixes (`lagos-chem-l0/`) remain untouched and are classified by PPC as `LEGACY_PRE_WORLD_MODEL`.
