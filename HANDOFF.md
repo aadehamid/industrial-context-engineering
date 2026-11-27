@@ -1,7 +1,7 @@
 # Project Handoff
 
 **Purpose:** let any agent (or human) pick up this project without re-deriving context.
-**Last updated:** 2026-11-26 UTC (repository renamed from `scada_harmonization`
+**Last updated:** 2026-11-27 UTC (repository renamed from `scada_harmonization`
 to `industrial-context-engineering`; companion repository renamed from
 `Engineering_Drawing_to_Graph` to `engineering-drawing-intelligence`; superseded
 PR #59 closed; PPC baseline update through `ADR-0040`–`0056` recorded in

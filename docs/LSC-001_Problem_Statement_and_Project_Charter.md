@@ -147,7 +147,8 @@ treated):
   products) so a model can train once and deploy across a fleet. Closed-loop action stays
   human-gated. *(Pattern only — not a retarget of Plane 4's flagship, which remains yield /
   production-leakage.)*
-- **A related project — engineering drawings to graph:** `aadehamid/Engineering_Drawing_to_Graph`,
+- **A related project — engineering drawings to graph:** `aadehamid/engineering-drawing-intelligence`
+  (formerly `aadehamid/Engineering_Drawing_to_Graph`),
   a **private** companion repository by the same owner, covers both routes to the same engineering
   model: extraction from flat P&IDs, and a structured path from an authoring backend through
   DEXPI 2.0. It states the ET problem this lab takes on and adds the **structured-backend route
@@ -171,7 +172,7 @@ These map onto the lab without changing the thesis — they sharpen *why* it mat
 | global **and** local requirements | two-tier broker — local site autonomy + central enterprise UNS (§4) |
 | yield improvement / production-leakage; edge + human-in-the-loop feedback | Plane 4 Track A flagship use case (§3, §6, §8) |
 | blend edge + historian + SAP; labs feed predictive models | IT/OT/ET fusion; LIMS as the lab leg of the IT source |
-| engineering records and flat P&IDs give no queryable, current model; tag ≠ asset identity | ET leg of Plane 3; related private project `Engineering_Drawing_to_Graph` |
+| engineering records and flat P&IDs give no queryable, current model; tag ≠ asset identity | ET leg of Plane 3; related private project `engineering-drawing-intelligence` (formerly `Engineering_Drawing_to_Graph`) |
 
 ---
 
@@ -772,7 +773,7 @@ beyond ERPNext community.
 | `docs/archive/umh_anchored_sparkplug_uns_notes.md` | Architecture option: UMH-anchored (abstraction phase) *(archived — describes UMH Classic; adopted target = UMH Core, §12 #16)* |
 | `docs/archive/python_centric_uns_notes.md` | Implementation philosophy: Python-centric *(archived — superseded on decided items)* |
 | `docs/LSC-003_Synthetic_Data_Generation_Strategy.md` | Data strategy & the 6-layer pipeline |
-| `aadehamid/Engineering_Drawing_to_Graph` *(related private repo — not linkable from here)* | Companion project, same owner — engineering drawings and backend records to a maintained engineering graph. Adds the structured-backend route. The in-tree EngiGraph folder stays this repo's ET reference. |
+| `aadehamid/engineering-drawing-intelligence` *(formerly `Engineering_Drawing_to_Graph`; related private repo — not linkable from here)* | Companion project, same owner — engineering drawings and backend records to a maintained engineering graph. Adds the structured-backend route. The in-tree EngiGraph folder stays this repo's ET reference. |
 | `reference/docs/` *(local-only ref)* | Reference: ISHE harmonization patterns (Plane 1) |
 | `reference/engineering_drawing_business_case/` *(local-only ref)* | Reference: EngiGraph ontology/graph patterns (Plane 3) |
 | `reference/README.md` | Index of reference material & what to consult each for |
@@ -925,7 +926,7 @@ beyond ERPNext community.
     brownfield or acquired, so the drawing is often the only engineering record. The
     **structured-backend route**
     (authoring system → DEXPI 2.0) stays with the related private companion repository
-    `aadehamid/Engineering_Drawing_to_Graph` and is not built here. **Open within this decision:**
+    `aadehamid/engineering-drawing-intelligence` (formerly `aadehamid/Engineering_Drawing_to_Graph`) and is not built here. **Open within this decision:**
     the extraction toolchain (PDF parser, OCR, symbol detection, vision model) is not selected.
     The companion repo's stack assessment lists candidates; consult it if you have access. Decide
     at the start of Phase 5b.1.
