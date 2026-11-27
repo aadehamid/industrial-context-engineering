@@ -1,9 +1,13 @@
 # Industrial data harmonization and contextualization home lab
 
-This lab simulates Lagos Specialty Chemicals, a manufacturer whose sites represent
-similar equipment and process data with different tags, units, and identities.
-It turns those differences into a governed Sparkplug B Unified Namespace, then
-connects operational, business, and engineering context in a knowledge graph.
+This repository (`aadehamid/industrial-context-engineering`, renamed from
+`scada_harmonization` on 2026-11-26) simulates Lagos Specialty Chemicals, a
+manufacturer whose sites represent similar equipment and process data with
+different tags, units, and identities. It turns those differences into a
+governed Sparkplug B Unified Namespace, then connects operational, business,
+and engineering context in a knowledge graph. The Python package name
+(`src/scada_harmonizer/`), the live R2 prefix (`lagos-chem-l0/`), and the
+Eraser workspace (`scada_harmonization`) stay unchanged.
 
 The lab is a learning environment and architecture prototype. Only the physical
 Level 0 data is synthetic. The software above it exercises real protocols,
@@ -31,8 +35,9 @@ to that work. See [the engineering record](docs/LSC-007_Unit_100_Engineering_Rec
 and [the Level 0 contract](docs/LSC-004_Level_0_Contract.md).
 
 The drawing-to-graph learning path is defined in charter section 8, Phase 5b.1.
-The related private project `aadehamid/Engineering_Drawing_to_Graph` adds an
-authoring-system backend route; it is a separate project, not a dependency.
+The related private project `aadehamid/engineering-drawing-intelligence`
+(formerly `aadehamid/Engineering_Drawing_to_Graph`) adds an authoring-system
+backend route; it is a separate project, not a dependency.
 
 ## Repository layout
 

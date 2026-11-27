@@ -59,7 +59,8 @@ pipe connection.
 Engineers reconstruct connectivity by tracing paths across sheets. Brownfield
 and acquired plants may hold only the sheets. The lab therefore extracts the
 Unit 100 P&ID first, then scanned variants. The owner's related private project,
-`aadehamid/Engineering_Drawing_to_Graph`, explores extraction from an
+`aadehamid/engineering-drawing-intelligence` (formerly
+`aadehamid/Engineering_Drawing_to_Graph`), explores extraction from an
 engineering-authoring backend.
 
 ---

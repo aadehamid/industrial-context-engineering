@@ -1,15 +1,16 @@
 # Project Handoff
 
 **Purpose:** let any agent (or human) pick up this project without re-deriving context.
-**Last updated:** 2026-11-08 UTC (all merged: PR #62 charter §14.7 N36/N37 · PR #63 + #65
-handoff fixes · PR #64 Brick Schema in LSC-REF-001 · PR #66 ontology candidate list in
-LSC-REF-001 · PR #67 [LSC-REF-002](docs/LSC-REF-002_Downstream_OilGas_Process_Ontologies.md)
-downstream O&G operational-process ontology search, proposals not adopted · **PR #68** made
-`scripts/check.sh`'s working-tree guard portable to macOS — the snapshot now runs in embedded
-Python (Python 3 is guaranteed on both platforms) instead of GNU-only `sed -z`/`stat -c`/
-`sha256sum`; native macOS `check.sh` was failing before any check (CI's Linux container had
-masked it). All 172 tests pass; `check.sh` verified under a plain macOS PATH (no coreutils/gnu-sed).
-Mapping-table spine remains the next build slice; run `scripts/facts.py main` for the tip)
+**Last updated:** 2026-11-27 UTC (repository renamed from `scada_harmonization`
+to `industrial-context-engineering`; companion repository renamed from
+`Engineering_Drawing_to_Graph` to `engineering-drawing-intelligence`; superseded
+PR #59 closed; PPC baseline update through `ADR-0040`–`0056` recorded in
+[LSC-REF-001](docs/LSC-REF-001_Technology_Roles_and_Reuse_Assessment.md) and
+[LSC-REG-002](docs/LSC-REG-002_Source_and_Integration_Register.md); Python
+package `src/scada_harmonizer/`, R2 prefix `lagos-chem-l0/`, and Eraser
+workspace `scada_harmonization` remain unchanged; prior merged baseline PRs
+#62–#69 stand; mapping-table spine remains the next build slice; run
+`scripts/facts.py main` for the tip)
 
 Read section 2 for current status and section 3 for the next build slice.
 The [master index](docs/LSC-000_Master_Index.md) maps each subject to its owner.
