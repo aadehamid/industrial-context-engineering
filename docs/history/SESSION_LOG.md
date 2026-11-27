@@ -951,3 +951,24 @@ macOS PATH with no coreutils/gnu-sed. Independent review on #68 ran on Pi (the K
 herdr-review harness failed with its own NameError before launching, twice); Pi verdict:
 READY, no blocking findings — commit-message tool list corrected in amend 6d89fe8 after Pi
 measured BSD sort -z / xargs -r actually work on macOS. The user closed the session here.
+
+---
+
+## 2026-11-26 — Repository rename and PPC baseline alignment
+
+The owner approved renaming `aadehamid/scada_harmonization` to
+`aadehamid/industrial-context-engineering` and renaming the companion repository
+`aadehamid/Engineering_Drawing_to_Graph` to
+`aadehamid/engineering-drawing-intelligence`. Superseded PR #59
+(`cursor/record-session-end-7d33`) was closed and its branch deleted, and the
+detached `scada_skeleton` worktree was removed.
+
+Documentation was updated to reflect the new repository names and PPC's
+reconciled architecture baseline (`f3086f7862c2cfd75c29ed0c48ed5ead4f513d1f`,
+`ADR-0040` through `ADR-0056`: Delta Lake on R2, Redpanda with transactional
+outbox on IT, OPC UA and MQTT Sparkplug B on OT, Git Turtle with `pyshacl` and
+Neo4j Community, no Cloudflare D1, provisional adapter integration, and planned
+`WorldExportBundle` in `WP-8B`). The Python package (`src/scada_harmonizer/`),
+the live Cloudflare R2 prefix (`lagos-chem-l0/`), and the Eraser workspace
+(`scada_harmonization`) remain unchanged. Mapping-table spine remains the next
+build slice.

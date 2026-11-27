@@ -11,10 +11,26 @@ the charter owns component decisions. HANDOFF section 2 owns implementation stat
 ## Evidence and selection rule
 
 The owner asked to reuse the reference stack where it makes sense. PPC was
-inspected at revision `01027a84be5d453cbb4e2ea091e4884729918b15`.
+initially inspected at revision `01027a84be5d453cbb4e2ea091e4884729918b15`.
 Its [technology map](https://github.com/aadehamid/pearland-petroleum-corporation/blob/01027a84be5d453cbb4e2ea091e4884729918b15/docs/PPC-002_Enterprise_Architecture_and_Technology_Stack.md)
 describes intended roles. Its mostly empty component directories do not prove
 that the stack ran. No reference application was executed for this assessment.
+
+### 2026-11-26 PPC baseline update
+
+PPC reconciled its architecture baseline at commit `f3086f7862c2cfd75c29ed0c48ed5ead4f513d1f`
+([PPC-ARCH-000](https://github.com/aadehamid/pearland-petroleum-corporation/blob/f3086f7862c2cfd75c29ed0c48ed5ead4f513d1f/docs/enterprise-architecture/00-master-index/PPC-ARCH-000_Master_Architecture_Index_and_Authority_Baseline.md)
+and `ADR-0040` through `ADR-0056`). Five changes supersede the earlier `01027a84`
+rows below.
+
+- Analytical storage moved from DuckLake to Delta Lake on Cloudflare R2 (`ADR-0045`).
+- Slice 1 event transport uses Redpanda with a transactional outbox on IT and OPC UA plus MQTT Sparkplug B on OT (`ADR-0046`), deferring Kafka and Debezium.
+- Formal semantics moved from a standing Apache Jena/Fuseki server to Git Turtle validated by `pyshacl` and projected to Neo4j Community (`ADR-0044`), matching this repository's Plane 3 split from PR #57.
+- Workflow state moved to PostgreSQL with no Cloudflare D1 (`ADR-0055`).
+- PPC integrates this repository through a commit-pinned provisional adapter (`ADR-0042`) and plans to export a coherent Refinery A dataset via `WorldExportBundle` in `WP-8B` (`ADR-0053`). Existing R2 prefixes (`lagos-chem-l0/`) remain untouched and are classified by PPC as `LEGACY_PRE_WORLD_MODEL`.
+
+This update records PPC's current design for alignment only. It does not amend
+this repository's approved charter choices or adopt new dependencies.
 
 Reuse an existing shared choice first. For a missing capability, assess the PPC
 component before proposing a substitute. Keep the lab's real-protocol exercises,

@@ -43,6 +43,7 @@ The charter owns the four planes, PLC-world boundary, identity reconciliation,
 source authority, Sparkplug contract, deterministic transforms, and phase exits.
 Read its sections 6, 8, 9, and 14 before changing those contracts.
 
-Project diagrams use Eraser in the `scada_harmonization` workspace. Details are
-in [working conventions](docs/WORKING_CONVENTIONS.md). Reference materials in
-`reference/` are local-only evidence, not scope or dependencies.
+Project diagrams remain in the Eraser workspace named `scada_harmonization`
+after the 2026-11-26 repository rename to `industrial-context-engineering`.
+Details are in [working conventions](docs/WORKING_CONVENTIONS.md). Reference
+materials in `reference/` are local-only evidence, not scope or dependencies.
