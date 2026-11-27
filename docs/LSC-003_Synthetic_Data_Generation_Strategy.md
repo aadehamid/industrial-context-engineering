@@ -13,6 +13,18 @@
 > file is snapshot-per-machine; the 1 s class is the generated P-101 / K-201 stream (see below).
 > **Cloudflare R2:** one bucket per project; this lab uses `lagos-chem-l0`. Locked
 > tree and connection block live in LSC-005_Phase_1_Data_Record.md.
+>
+> **Cross-repository world-model boundary (2026-11-26):** `lagos-chem-l0` serves
+> this lab's standalone Lagos Specialty Chemicals (LSC) scenario and stays
+> untouched. For the integrated downstream refinery ecosystem,
+> `aadehamid/pearland-petroleum-corporation` (`f3086f7862c2cfd75c29ed0c48ed5ead4f513d1f`,
+> renamed sister links in PR #12 at `ebc226f7da52c1a34b32af2ac2acea16b88d5183`;
+> `ADR-0040`, `ADR-0041`, `ADR-0053`) owns the single canonical Refinery A v1
+> enterprise world model, isolates hidden world truth under `evaluation/hidden/`,
+> and plans to export Refinery A's `observable/` OT L0 streams and native tag
+> schedule in `WorldExportBundle` (`WP-8B`) without writing into
+> `lagos-chem-l0`. See
+> [`LSC-REF-001_Technology_Roles_and_Reuse_Assessment.md`](LSC-REF-001_Technology_Roles_and_Reuse_Assessment.md#2026-11-26-ppc-baseline-update).
 
 This strategy explains how benchmark data and generated signals represent the
 same process through different site dialects. L0 supplies the synthetic physical

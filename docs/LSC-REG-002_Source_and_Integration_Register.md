@@ -129,10 +129,12 @@ owns candidate technology comparisons. This register does not independently
 adopt Dagster, DuckLake, OpenLineage, or other reference components.
 
 On 2026-11-26, PPC reconciled its baseline at commit
-`f3086f7862c2cfd75c29ed0c48ed5ead4f513d1f` (`ADR-0040` through `ADR-0056`),
-moving to Delta Lake on Cloudflare R2, NATS JetStream with a transactional outbox on IT,
-OPC UA with MQTT Sparkplug B on OT, Git Turtle with `pyshacl` projected to Neo4j
-Community, and a planned `WorldExportBundle` handoff in `WP-8B`. See the
-2026-11-26 update in
+`f3086f7862c2cfd75c29ed0c48ed5ead4f513d1f` (`ADR-0040` through `ADR-0056`, with
+renamed sister-repository links landed in PR #12 at
+`ebc226f7da52c1a34b32af2ac2acea16b88d5183`), moving to Delta Lake on Cloudflare
+R2, NATS JetStream with a transactional outbox on IT, OPC UA with MQTT Sparkplug
+B on OT, Git Turtle with `pyshacl` projected to Neo4j Community, and a planned
+two-part `WorldExportBundle` handoff (`observable/` vs `hidden_truth/` under
+`evaluation/hidden/`) in `WP-8B`. See the 2026-11-26 update in
 [LSC-REF-001](LSC-REF-001_Technology_Roles_and_Reuse_Assessment.md#2026-11-26-ppc-baseline-update).
 No PPC runtime was executed for this update.

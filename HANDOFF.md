@@ -4,8 +4,10 @@
 **Last updated:** 2026-11-27 UTC (repository renamed from `scada_harmonization`
 to `industrial-context-engineering`; companion repository renamed from
 `Engineering_Drawing_to_Graph` to `engineering-drawing-intelligence`; superseded
-PR #59 closed; PPC baseline update through `ADR-0040`–`0056` recorded in
-[LSC-REF-001](docs/LSC-REF-001_Technology_Roles_and_Reuse_Assessment.md) and
+PR #59 closed; PPC baseline and canonical world-model boundary through `ADR-0040`–`0056` recorded in
+[README.md](README.md#relationship-to-pearland-petroleum-corporation-ppc),
+[LSC-003](docs/LSC-003_Synthetic_Data_Generation_Strategy.md),
+[LSC-REF-001](docs/LSC-REF-001_Technology_Roles_and_Reuse_Assessment.md), and
 [LSC-REG-002](docs/LSC-REG-002_Source_and_Integration_Register.md); Python
 package `src/scada_harmonizer/`, R2 prefix `lagos-chem-l0/`, and Eraser
 workspace `scada_harmonization` remain unchanged; prior merged baseline PRs

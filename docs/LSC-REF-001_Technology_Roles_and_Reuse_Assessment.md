@@ -19,15 +19,20 @@ that the stack ran. No reference application was executed for this assessment.
 ### 2026-11-26 PPC baseline update
 
 PPC reconciled its architecture baseline at commit `f3086f7862c2cfd75c29ed0c48ed5ead4f513d1f`
-([PPC-ARCH-000](https://github.com/aadehamid/pearland-petroleum-corporation/blob/f3086f7862c2cfd75c29ed0c48ed5ead4f513d1f/docs/enterprise-architecture/00-master-index/PPC-ARCH-000_Master_Architecture_Index_and_Authority_Baseline.md)
-and `ADR-0040` through `ADR-0056`). Five changes supersede the earlier `01027a84`
+and updated its renamed sister-repository links in PR #12 at commit
+`ebc226f7da52c1a34b32af2ac2acea16b88d5183`
+([PPC-ARCH-000](https://github.com/aadehamid/pearland-petroleum-corporation/blob/ebc226f7da52c1a34b32af2ac2acea16b88d5183/docs/enterprise-architecture/00-master-index/PPC-ARCH-000_Master_Architecture_Index_and_Authority_Baseline.md),
+[ADR-0041](https://github.com/aadehamid/pearland-petroleum-corporation/blob/ebc226f7da52c1a34b32af2ac2acea16b88d5183/docs/adr/0041-function-first-lean-core-enabling-stack.md),
+[ADR-0042](https://github.com/aadehamid/pearland-petroleum-corporation/blob/ebc226f7da52c1a34b32af2ac2acea16b88d5183/docs/adr/0042-provisional-adapters-for-upstream-repositories.md),
+and [ADR-0053](https://github.com/aadehamid/pearland-petroleum-corporation/blob/ebc226f7da52c1a34b32af2ac2acea16b88d5183/docs/adr/0053-legacy-data-quarantine-and-world-export-bundle.md);
+`ADR-0040` through `ADR-0056`). Five changes supersede the earlier `01027a84`
 rows below.
 
 - Analytical storage moved from DuckLake to Delta Lake on Cloudflare R2 (`ADR-0045`).
 - Slice 1 event transport uses NATS JetStream with a transactional outbox on IT and OPC UA plus MQTT Sparkplug B on OT (`ADR-0046`), deferring Kafka and Debezium.
 - Formal semantics moved from a standing Apache Jena/Fuseki server to Git Turtle validated by `pyshacl` and projected to Neo4j Community (`ADR-0044`), matching this repository's Plane 3 split from PR #57.
 - Workflow state moved to PostgreSQL with no Cloudflare D1 (`ADR-0055`).
-- PPC integrates this repository through a commit-pinned provisional adapter (`ADR-0042`) and plans to export a coherent Refinery A dataset via `WorldExportBundle` in `WP-8B` (`ADR-0053`). Existing R2 prefixes (`lagos-chem-l0/`) remain untouched and are classified by PPC as `LEGACY_PRE_WORLD_MODEL`.
+- PPC integrates this repository through a commit-pinned provisional adapter (`ADR-0042`), owns the single canonical Refinery A v1 enterprise world model across the five-repository ecosystem (`enterprise-performance-model`, `enterprise-context-engineering`, `industrial-context-engineering`, `engineering-drawing-intelligence`, and `pearland-petroleum-corporation`; `ADR-0041`, `ADR-0053`), and plans to export a coherent Refinery A dataset via `WorldExportBundle` in `WP-8B` (`ADR-0053`, partitioned into `observable/` for sister repositories and `hidden_truth/` under `evaluation/hidden/` for grading only). Existing R2 prefixes (`lagos-chem-l0/`) remain this lab's standalone LSC dataset and are inventoried by PPC as `LEGACY_PRE_WORLD_MODEL` without moving or deleting live prefixes unless the owner approves each prefix explicitly after PPC `WP-1` passes.
 
 This update records PPC's current design for alignment only. It does not amend
 this repository's approved charter choices or adopt new dependencies.

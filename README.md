@@ -39,6 +39,29 @@ The related private project `aadehamid/engineering-drawing-intelligence`
 (formerly `aadehamid/Engineering_Drawing_to_Graph`) adds an authoring-system
 backend route; it is a separate project, not a dependency.
 
+## Relationship to Pearland Petroleum Corporation (PPC)
+
+Lagos Specialty Chemicals (LSC) and its R2 bucket (`lagos-chem-l0/`) remain this
+repository's standalone home-lab scenario through Phase 7. Across the broader
+five-repository downstream ecosystem (`enterprise-performance-model`,
+`enterprise-context-engineering`, `industrial-context-engineering`,
+`engineering-drawing-intelligence`, and `pearland-petroleum-corporation`),
+`aadehamid/pearland-petroleum-corporation` owns the single canonical enterprise
+world model (Refinery A v1; architecture reconciled at `f3086f7862c2cfd75c29ed0c48ed5ead4f513d1f`
+and renamed sister-repository links landed in PR #12 at `ebc226f7da52c1a34b32af2ac2acea16b88d5183`,
+[ADR-0041](https://github.com/aadehamid/pearland-petroleum-corporation/blob/ebc226f7da52c1a34b32af2ac2acea16b88d5183/docs/adr/0041-function-first-lean-core-enabling-stack.md),
+[ADR-0042](https://github.com/aadehamid/pearland-petroleum-corporation/blob/ebc226f7da52c1a34b32af2ac2acea16b88d5183/docs/adr/0042-provisional-adapters-for-upstream-repositories.md),
+and [ADR-0053](https://github.com/aadehamid/pearland-petroleum-corporation/blob/ebc226f7da52c1a34b32af2ac2acea16b88d5183/docs/adr/0053-legacy-data-quarantine-and-world-export-bundle.md)).
+PPC integrates this repository's L0 contracts through a commit-pinned
+provisional adapter (`ADR-0042`), isolates hidden world truth under
+`evaluation/hidden/`, and plans to publish Refinery A's coherent `observable/`
+OT L0 streams and native tag schedule via `WorldExportBundle` in `WP-8B`
+(`ADR-0053`). Under `ADR-0053`, PPC inventories existing R2 prefixes
+(`lagos-chem-l0/`) as `LEGACY_PRE_WORLD_MODEL` without moving or deleting live
+prefixes unless the owner approves each prefix explicitly after PPC `WP-1`
+passes. See
+[LSC-REF-001](docs/LSC-REF-001_Technology_Roles_and_Reuse_Assessment.md#2026-11-26-ppc-baseline-update).
+
 ## Repository layout
 
 | Path | Responsibility |
